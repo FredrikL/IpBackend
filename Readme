@@ -2,4 +2,9 @@ Small backend that allows clients to post ips.
 
 Made to avoid depenencies on services like dyndns.org etc
 
+If the client only posts a name to the server then the ip is taken from the request, otherwise the posted ip will be used.
 
+Curl example:
+curl -i -X POST --user user:password -d '{"Name":"<name>", "Ip":"<Ip>"}' http://hostname/
+
+see scripts/ipsync.rb for example (ruby) script
