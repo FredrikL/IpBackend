@@ -1,0 +1,5 @@
+Small backend that allows clients to post ips.
+
+Made to avoid depenencies on services like dyndns.org etc
+
+
